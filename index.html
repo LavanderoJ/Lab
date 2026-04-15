@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator Website</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container">
+        <h1>Calculator</h1>
+
+        <div class="calculator">
+            <input type="text" id="display" disabled>
+
+            <div class="buttons">
+                <button onclick="clearDisplay()" id="ac">AC</button>
+                <button onclick="deleteLast()" id="delete">⌫</button>
+                <button onclick="append('/')" id="operation">÷</button>
+                <button onclick="append('*')" id="operation">×</button>
+
+                <button onclick="append('7')">7</button>
+                <button onclick="append('8')">8</button>
+                <button onclick="append('9')">9</button>
+                <button onclick="append('-')" id="operation">−</button>
+
+                <button onclick="append('4')">4</button>
+                <button onclick="append('5')">5</button>
+                <button onclick="append('6')">6</button>
+                <button onclick="append('+')" id="operation">+</button>
+
+                <button onclick="append('1')">1</button>
+                <button onclick="append('2')">2</button>
+                <button onclick="append('3')">3</button>
+                <button onclick="calculate()" id="equal">=</button>
+
+                <button onclick="append('0')" class="zero">0</button>
+                <button onclick="append('.')">.</button>
+            </div>
+        </div>
+
+        <div class="instructions">
+            <h2>User Guide</h2>
+            <p>• Click number buttons to input values.</p>
+            <p>• Use +, −, ×, ÷ for operations.</p>
+            <p>• Press "=" to calculate.</p>
+            <p>• Press "AC" to clear the display.</p>
+            <p>• Press "⌫" to delete last input.</p>
+            <p>• Keyboard input is supported.</p>
+
+            <h3>Supported Operations</h3>
+            <p>Addition (+), Subtraction (−), Multiplication (×), Division (÷)</p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
